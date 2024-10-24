@@ -227,35 +227,7 @@ function ResponsiveAppBar({thememode,toggle,setUser,user,setFlag,flag}) {
               >
                 Charts
               </Button>
-              <Button
-                key="Stocks"
-                onClick={()=>{navigate("/stocks")}}
-                sx={{
-                    my: 2,
-            color: thememode === 'dark' ? 'white' : '#000080',
 
-                    display: 'block',
-                    position: 'relative',
-                    '&::after': {
-                      content: '""',
-                      position: 'absolute',
-                      width: '100%',
-                      height: '2px',
-                      backgroundColor: '#000080',
-                      bottom: '-4px', // Adjust this value to move the underline up or down
-                      left: 0,
-                      transform: 'scaleX(0)',
-                      transformOrigin: 'bottom right',
-                      transition: 'transform 0.25s ease-out',
-                    },
-                    '&:hover::after': {
-                      transform: 'scaleX(1)',
-                      transformOrigin: 'bottom left',
-                    },
-                  }}
-              >
-                Stocks
-              </Button>
           </Box>
 
           <Box sx={{ flexGrow: 0 }}>
